@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { GłownaPageModule } from './pages/głowna.page-module';
+import { OnasPageModule } from './pages/onas.page-module';
 
 const routes: Routes = [];
 
