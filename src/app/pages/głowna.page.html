@@ -1,42 +1,65 @@
-<h2>Strona główna</h2>
+<div class="p-3 mb-2 bg-danger text-white">PIESNI LODU I OGNIA</div>
 <div class="container">
     
+
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <nav>
+        <a routerLink="onas"><button type="button" class="btn btn-dark">Tomy</button>
+        </a>
+      
+      
+      
+      <router-outlet></router-outlet>
+      </nav>
+    </div>
+    <div class="col">
+      <nav>
+        <a routerLink="autor"><button type="button" class="btn btn-dark">Autor</button>
+        </a>
+      
+      
+      
+      <router-outlet></router-outlet>
+      </nav>
+
+    </div>
+    <div class="col">
+      <nav>
+        <a routerLink="serial"><button type="button" class="btn btn-dark">Serial</button>
+        </a>
+      
+      
+      
+      <router-outlet></router-outlet>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+
 
     
   </div>
   <div class="container">
     <div class="row align-items-start">
       <div class="col">
-        <button type="button" class="btn btn-primary">Onas</button>
+        
+        
         <div class="container-fluid"><router-outlet></router-outlet>
-            Firma ZAPP-MED LTD. Oddział w Polsce z siedzibą w Łodzi, specjalizująca się w sprzedaży internetowej produktów przeznaczonych do higieny jamy ustnej.
-    
-    Zachęcamy do kontaktu mailowego. Prosimy o podanie nr zamówienia. Łatwo możemy zidentyfikować klienta oraz sprawdzić co się dzieje z przesyłką i sprawnie rozwiązać problem.
-    
-    Współpracujemy z takimi firmami jak: Oral-B, Philips, Braun, Ziaja, Apis, Dabur.
-    
-    Więcej o naszej firmie możesz się dowiedzieć na stronie o nas.
+          Pieśń lodu i ognia (ang. A Song of Ice and Fire) – seria powieści fantasy autorstwa amerykańskiego pisarza George’a R.R. Martina, zaplanowana na siedem tomów, z których jak na razie wydanych zostało pięć: Gra o tron, Starcie królów, Nawałnica mieczy, Uczta dla wron oraz Taniec ze smokami. Trwają prace nad kolejnymi tomami sagi: The Winds of Winter i A Dream of Spring.
+
+          Martin zaczął pisać pierwszy tom w 1991 roku, książka wydana została w 1996. Rok później otrzymała nagrodę Locusa w kategorii najlepsza powieść fantasy. Martin został jeszcze trzykrotnie laureatem tej nagrody: w 1999 roku za Starcie królów, w 2001 za Nawałnicę mieczy oraz za Taniec ze smokami w 2012[1]. Pierwsze pięć tomów rozeszło się w nakładzie ponad 24 milionów egzemplarzy i zostało przetłumaczonych na ponad 20 języków[2] (stan z 2013).
           </div>
       </div>
       
       <div class="col">
-        <button type="button" class="btn btn-primary">Kontakt</button>
         
-        <img src="todo-training\src\assets\Images\indeks.jpg" class="img-fluid">
-
-      </div>
+        
+        <img src="assets/Images/smok.jpg" class="img-fluid">
 
      
-      
-
-
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <a class="nav-link active" aria-current="page" href="#">Onas</a>
-          </div>
-          <div class="col">
-            <a class="nav-link" href="#">Głowna</a>
-          </div>
-         
       <router-outlet></router-outlet>
