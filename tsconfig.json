@@ -11,9 +11,17 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "paths": {
+      "autor": [
+        "dist/autor/autor",
+        "dist/autor"
+      ],
       "onas": [
         "dist/onas/onas",
         "dist/onas"
+      ],
+      "serial": [
+        "dist/serial/serial",
+        "dist/serial"
       ]
     },
     "target": "es2015",
