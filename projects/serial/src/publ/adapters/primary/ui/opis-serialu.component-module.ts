@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OpisSerialuComponent } from '/opis-serialu.component'
+import { OpisSerialuComponent } from './opis-serialu.component'
 
 @NgModule({ imports: [CommonModule],
   	declarations: [OpisSerialuComponent],
