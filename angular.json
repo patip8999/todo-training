@@ -242,6 +242,46 @@
           }
         }
       }
+    },
+    "Kontakt": {
+      "projectType": "library",
+      "root": "projects/kontakt",
+      "sourceRoot": "projects/kontakt/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "tsConfig": "projects/kontakt/tsconfig.lib.json",
+            "project": "projects/kontakt/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/kontakt/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/kontakt/src/test.ts",
+            "tsConfig": "projects/kontakt/tsconfig.spec.json",
+            "karmaConfig": "projects/kontakt/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/kontakt/tsconfig.lib.json",
+              "projects/kontakt/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "todo-training"

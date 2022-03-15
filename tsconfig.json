@@ -15,6 +15,10 @@
         "dist/autor/autor",
         "dist/autor"
       ],
+      "kontakt": [
+        "dist/kontakt/kontakt",
+        "dist/kontakt"
+      ],
       "onas": [
         "dist/onas/onas",
         "dist/onas"

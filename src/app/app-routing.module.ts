@@ -4,6 +4,7 @@ import { GłownaPageModule } from './pages/głowna.page-module';
 import { OnasPageModule } from './pages/onas.page-module';
 import { AutorPageModule } from './pages/autor.page-module';
 import { SerialPageModule } from './pages/serial.page-module';
+import { ContactUsPageModule } from './pages/contact-us.page-module';
 
 const routes: Routes = [{ 
         path: 'onas', 
@@ -20,6 +21,10 @@ const routes: Routes = [{
   { 
         path: 'serial', 
         loadChildren: () => SerialPageModule
+      },
+  { 
+        path: 'Kontakt', 
+        loadChildren: () => ContactUsPageModule
       }
 ];
 
