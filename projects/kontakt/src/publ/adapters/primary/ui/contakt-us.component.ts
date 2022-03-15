@@ -2,14 +2,10 @@ import { Component, ViewEncapsulation, ChangeDetectionStrategy } from '@angular/
 import { FormGroup, FormControl } from '@angular/forms';
 
 @Component({ selector: 'lib-contakt-us', templateUrl: './contakt-us.component.html', encapsulation: ViewEncapsulation.None, changeDetection: ChangeDetectionStrategy.OnPush })
-export class ContaktUsComponent {
-  autor="Patrycja";
-  submit(kontakt:FormGroup){
-    this.autor=kontakt.get("telefon").value;
-    this.autor=kontakt.get("Nazwisko").value;
-    this.autor=kontakt.get("Imie").value;}
-  readonly kontakt: FormGroup = new FormGroup({imie: new FormControl(), nazwisko: new FormControl(), telefon: new FormControl()});
-
-
+export class ContaktUsComponent{
+  
+  readonly messageForm: FormGroup = new FormGroup({imie: new FormControl(), nazwisko: new FormControl(), telefon: new FormControl()});
+  
+  onFormSubmited(messageForm: FormGroup): void {console.log(messageForm.getRawValue());}
 
 }
