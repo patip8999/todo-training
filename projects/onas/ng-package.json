@@ -2,6 +2,6 @@
   "$schema": "../../node_modules/ng-packagr/ng-package.schema.json",
   "dest": "../../dist/onas",
   "lib": {
-    "entryFile": "src/e2e.ts"
+    "entryFile": "src/index.ts"
   }
 }
