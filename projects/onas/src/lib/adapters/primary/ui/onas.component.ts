@@ -7,6 +7,7 @@ export class OnasComponent {
     tom:TomyDTO={
         title:" Gra o tron",
         image:"assets/Images/Tom01.jpg"
+    
     }
 
    autor="Autor";
