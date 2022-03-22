@@ -1,7 +1,7 @@
 
 
   
-  <div class="container">
+  <div class="container" *ngFor="let tom of tom |async" >
     {{tom.title}}
     <div class="row" >
       <div class="col" >
@@ -12,7 +12,7 @@
   
   Na podstawie powieści powstał serial Gra o tron realizowany przez telewizję HBO, a także gra fabularna, gra planszowa oraz gry komputerowe.
       </div>
-      
+     
       <div class="col">
        
         <img src="assets/Images/Tom02.jpg" class="img-fluid">
