@@ -5,7 +5,7 @@ import { OnasPageModule } from './pages/onas.page-module';
 import { AutorPageModule } from './pages/autor.page-module';
 import { SerialPageModule } from './pages/serial.page-module';
 import { ContactUsPageModule } from './pages/contact-us.page-module';
-
+import { AdminPageModule } from './pages/admin.page-module';
 const routes: Routes = [{ 
         path: 'onas', 
         loadChildren: () => OnasPageModule
@@ -25,7 +25,12 @@ const routes: Routes = [{
   { 
         path: 'Kontakt', 
         loadChildren: () => ContactUsPageModule
+      },
+      { 
+        path: 'admin', 
+        loadChildren: () => AdminPageModule
       }
+
 ];
 
 @NgModule({

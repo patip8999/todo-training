@@ -1,18 +1,1 @@
-{"compileOnSave":false,
-    "compilerOptions":{"baseUrl":"./","outDir":"./dist/out-tsc",
-        "sourceMap":true,"declaration":false,
-        "downlevelIteration":true,
-        "experimentalDecorators":true,
-        "moduleResolution":"node",
-        "importHelpers":true,"paths":{
-            "autor":["dist/autor/autor","dist/autor"],
-            "@autor": ["projects/autor/src/index.ts"],
-            "kontakt":["dist/kontakt/kontakt","dist/kontakt"],
-            "@kontakt": ["projects/kontakt/src/index.ts"],
-            "onas":["dist/onas/onas","dist/onas"],
-            "@onas":["projects/onas/src/index.ts"],
-            "serial":["dist/serial/serial","dist/serial"],
-            "@serial": ["projects/serial/src/index.ts"],
-            "@na-vigation":["projects/na-vigation/src/index.ts"]},
-            "target":"es2015","module":"es2020","lib":["es2018","dom"]},
-            "angularCompilerOptions":{"enableI18nLegacyMessageIdFormat":false}}
+{"compileOnSave":false,"compilerOptions":{"baseUrl":"./","outDir":"./dist/out-tsc","sourceMap":true,"declaration":false,"downlevelIteration":true,"experimentalDecorators":true,"moduleResolution":"node","importHelpers":true,"paths":{"autor":["dist/autor/autor","dist/autor"],"@autor":["projects/autor/src/index.ts"],"kontakt":["dist/kontakt/kontakt","dist/kontakt"],"@kontakt":["projects/kontakt/src/index.ts"],"onas":["dist/onas/onas","dist/onas"],"@onas":["projects/onas/src/index.ts"],"serial":["dist/serial/serial","dist/serial"],"@serial":["projects/serial/src/index.ts"],"@na-vigation":["projects/na-vigation/src/index.ts"],"@tomy":["projects/tomy/src/index.ts"]},"target":"es2015","module":"es2020","lib":["es2018","dom"]},"angularCompilerOptions":{"enableI18nLegacyMessageIdFormat":false}}

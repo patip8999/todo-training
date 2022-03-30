@@ -1,24 +1,22 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-import { OnasPage } from './onas.page';
-import { OnasComponentModule } from '../../../projects/onas/src/lib/adapters/primary/ui/onas.component-module';
-import { TomyComponentModule } from '../../../projects/tomy/src/lib/adapters/primary/ui/tomy.component-module';
+import { AdminPage } from './admin.page';
+import { CreateTomComponentModule } from '../../../projects/tomy/src/lib/adapters/primary/ui/create-tom.component-module';
 import { FirebaseTomyServiceModule } from '../../../projects/tomy/src/lib/adapters/secondary/infrastructure/firebase-tomy.service-module';
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
         {
           path: '',
-          component: OnasPage,
+          component: AdminPage,
         }
       ]),
-  OnasComponentModule,
-  TomyComponentModule,
+      CreateTomComponentModule,
   FirebaseTomyServiceModule
 ],
-  	declarations: [OnasPage],
+  	declarations: [AdminPage],
   	providers: [],
   	exports: [] })
-export class OnasPageModule {
+export class AdminPageModule {
 }
