@@ -17,6 +17,6 @@ export class FirebaseTomyService implements GetsAllTomyDtoPort, AddsTomyDtoPort 
   }
 
   add(tomy: Partial<TomyDTO>): void {
-    this._client.collection('tomies').add(tomy);
+    this._client.collection('Tomy').add(tomy);
   }
 }
