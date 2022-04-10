@@ -22,6 +22,8 @@ export class FirebaseTomyService implements GetsAllTomyDtoPort, AddsTomyDtoPort,
   }
 
   getOne(id: string): Observable<TomyDTO> {
-    return this._client.doc<TomyDTO>('Tomy/'+id).valueChanges({idField: 'id'});
+    return this._client.doc<TomyDTO>
+    ('Tomy/'+ id).valueChanges
+    ({idField: 'id'});
   }
 }

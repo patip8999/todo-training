@@ -4,7 +4,10 @@ import { TomyDTO } from '../../../application/ports/secondary/tomy.dto';
 import { GETS_ONE_TOMY_DTO, GetsOneTomyDtoPort } from '../../../application/ports/secondary/gets-one-tomy.dto-port';
 import { ActivatedRoute } from '@angular/router';
 
-@Component({ selector: 'lib-tomydetalis', templateUrl: './tomydetalis.component.html', encapsulation: ViewEncapsulation.None, changeDetection: ChangeDetectionStrategy.OnPush })
+@Component({ selector: 'lib-tomydetalis',
+ templateUrl: './tomydetalis.component.html',
+  encapsulation: ViewEncapsulation.None, 
+  changeDetection: ChangeDetectionStrategy.OnPush })
 export class TomydetalisComponent {
   tomy$: Observable<TomyDTO> = this._getsOneTomyDto.getOne(
     this._activatedRoute.snapshot.params.tomyId
