@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { SerialPage } from './serial.page';
 import { OpisSerialuComponentModule } from '../../../projects/serial/src/publ/adapters/primary/ui/opis-serialu.component-module';
+import { FirebaseTomyServiceModule } from '@tomy';
 
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
@@ -11,7 +12,8 @@ import { OpisSerialuComponentModule } from '../../../projects/serial/src/publ/ad
           component: SerialPage,
         }
       ]),
-  OpisSerialuComponentModule
+  OpisSerialuComponentModule,
+  FirebaseTomyServiceModule
 ],
   	declarations: [SerialPage],
   	providers: [],

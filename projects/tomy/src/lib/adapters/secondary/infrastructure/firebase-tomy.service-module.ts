@@ -3,10 +3,11 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { FirebaseTomyService } from './firebase-tomy.service';
 import { GETS_ALL_TOMY_DTO } from '../../../application/ports/secondary/gets-all-tomy.dto-port';
 import { ADDS_TOMY_DTO } from '../../../application/ports/secondary/adds-tomy.dto-port';
+import { GETS_ONE_TOMY_DTO } from '../../../application/ports/secondary/gets-one-tomy.dto-port';
 
 @NgModule({ imports: [AngularFirestoreModule],
   	declarations: [],
-  	providers: [FirebaseTomyService, { provide: GETS_ALL_TOMY_DTO, useExisting: FirebaseTomyService }, { provide: ADDS_TOMY_DTO, useExisting: FirebaseTomyService }],
+  	providers: [FirebaseTomyService, { provide: GETS_ALL_TOMY_DTO, useExisting: FirebaseTomyService }, { provide: ADDS_TOMY_DTO, useExisting: FirebaseTomyService }, { provide: GETS_ONE_TOMY_DTO, useExisting: FirebaseTomyService }],
   	exports: [] })
 export class FirebaseTomyServiceModule {
 }

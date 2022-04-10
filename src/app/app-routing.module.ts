@@ -6,6 +6,7 @@ import { AutorPageModule } from './pages/autor.page-module';
 import { SerialPageModule } from './pages/serial.page-module';
 import { ContactUsPageModule } from './pages/contact-us.page-module';
 import { AdminPageModule } from './pages/admin.page-module';
+import { TomydetalisPageModule } from './pages/tomydetalis.page-module';
 const routes: Routes = [{ 
         path: 'onas', 
         loadChildren: () => OnasPageModule
@@ -29,6 +30,10 @@ const routes: Routes = [{
       { 
         path: 'admin', 
         loadChildren: () => AdminPageModule
+      },
+      {
+      path: 'tomy',
+      loadChildren: () => TomydetalisPageModule
       }
 
 ];

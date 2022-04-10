@@ -6,9 +6,10 @@ import { GetsAllTomyDtoPort } from '../../../application/ports/secondary/gets-al
 import { TomyDTO } from '../../../application/ports/secondary/tomy.dto';
 import { filterByCriterion } from '@lowgular/shared';
 import { AddsTomyDtoPort } from '../../../application/ports/secondary/adds-tomy.dto-port';
+import { GetsOneTomyDtoPort } from '../../../application/ports/secondary/gets-one-tomy.dto-port';
 
 @Injectable()
-export class FirebaseTomyService implements GetsAllTomyDtoPort, AddsTomyDtoPort {
+export class FirebaseTomyService implements GetsAllTomyDtoPort, AddsTomyDtoPort, GetsOneTomyDtoPort {
   constructor(private _client: AngularFirestore) {
   }
 
@@ -18,5 +19,9 @@ export class FirebaseTomyService implements GetsAllTomyDtoPort, AddsTomyDtoPort 
 
   add(tomy: Partial<TomyDTO>): void {
     this._client.collection('Tomy').add(tomy);
+  }
+
+  getOne(id: string): Observable<TomyDTO> {
+    return this._client.doc<TomyDTO>('Tomy/'+id).valueChanges({idField: 'id'});
   }
 }
