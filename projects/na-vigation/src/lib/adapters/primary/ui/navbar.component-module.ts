@@ -7,6 +7,7 @@ import { OnasPageModule } from 'src/app/pages/onas.page-module';
 import { GłownaPageModule } from 'src/app/pages/głowna.page-module';
 import { AutorPageModule } from 'src/app/pages/autor.page-module';
 import { SerialPageModule } from 'src/app/pages/serial.page-module';
+
 const routes: Routes = [{ 
 	path: 'onas', 
 	loadChildren: () => OnasPageModule
@@ -26,7 +27,8 @@ const routes: Routes = [{
 { 
 	path: 'Kontakt', 
 	loadChildren: () => ContactUsPageModule
-  }
+  },
+
 ];
 @NgModule({ imports: [CommonModule, RouterModule.forRoot(routes), GłownaPageModule],
 	declarations: [NavbarComponent],

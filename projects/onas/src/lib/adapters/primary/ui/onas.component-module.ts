@@ -4,7 +4,7 @@ import { OnasComponent } from './onas.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { OnasPageModule } from 'src/app/pages/onas.page-module';
-import { TomydetalisPageModule } from 'src/app/pages/tomydetalis.page-module';
+
 
 @NgModule({ imports: [CommonModule,ReactiveFormsModule],
   	declarations: [OnasComponent],
