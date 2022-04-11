@@ -7,9 +7,9 @@
     <div class="row" >
       <div class="col" >
         
-        <img  [src]="item.imageUrl" width="300" height="400">
+        <img  [routerLink]="'/tomy/'+item.id" [src]="item.imageUrl" width="300" height="400">
         {{item.bio}} 
-  <a [routerLink]="'/tomy/'+item.id"  class="btn btn-danger"> Szczegóły</a>
+  
       </div>
      
       <div class="col">
