@@ -17,7 +17,7 @@ import { FirebaseTomyServiceModule } from '../../../projects/tomy/src/lib/adapte
   OnasComponentModule,
   ContaktUsComponentModule,
   TomyComponentModule,
-  FirebaseTomyServiceModule
+  FirebaseTomyServiceModule,
 ],
   	declarations: [GłownaPage],
   	providers: [],
