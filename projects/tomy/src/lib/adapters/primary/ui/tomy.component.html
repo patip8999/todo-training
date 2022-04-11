@@ -2,14 +2,14 @@
 <br>
 <div class="container">
     <div class="row">
-        <div class="col" align="justify" *ngFor="let item of tomy$ | async"
-          [routerLink]="'/tomy/'+item.id">
+        <div class="col" align="justify" *ngFor="let item of tomy$ | async">
+          
     <div class="row" >
       <div class="col" >
         
         <img  [src]="item.imageUrl" width="300" height="400">
         {{item.bio}} 
-    
+  <a [routerLink]="'/tomy/'+item.id"  class="btn btn-primary"> Szczegóły</a>
       </div>
      
       <div class="col">

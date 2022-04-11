@@ -5,7 +5,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 
-@NgModule({ imports: [CommonModule],
+@NgModule({ imports: [CommonModule, RouterModule],
   	declarations: [TomyComponent],
   	providers: [],
   	exports: [TomyComponent] })

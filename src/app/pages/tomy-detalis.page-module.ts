@@ -8,7 +8,7 @@ import { FirebaseTomyServiceModule } from '../../../projects/tomy/src/lib/adapte
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
         {
-          path: 'tomyid',
+          path: ':tomyId',
           component: TomyDetalisPage,
         }
       ]),
