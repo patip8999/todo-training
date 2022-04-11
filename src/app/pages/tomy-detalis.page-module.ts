@@ -5,6 +5,7 @@ import { TomyDetalisPage } from './tomy-detalis.page';
 import { TomydetalisComponentModule } from '../../../projects/tomy/src/lib/adapters/primary/ui/tomydetalis.component-module';
 import { FirebaseTomyServiceModule } from '../../../projects/tomy/src/lib/adapters/secondary/infrastructure/firebase-tomy.service-module';
 
+
 @NgModule({ imports: [CommonModule, 
       RouterModule.forChild([
         {

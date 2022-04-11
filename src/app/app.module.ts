@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { AngularFireModule } from '@angular/fire';
 import { BrowserModule } from '@angular/platform-browser';
 import { NavbarComponentModule } from '@na-vigation';
+import { InMemoryContextStorageModule } from 'projects/tomy/src/lib/adapters/secondary/infrastructure/in-memory-context.storage-module';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -21,6 +22,7 @@ const firebaseConfig = {
   ],
   imports: [
     AngularFireModule.initializeApp(firebaseConfig),
+    InMemoryContextStorageModule,
     BrowserModule,
     AppRoutingModule,
     NavbarComponentModule

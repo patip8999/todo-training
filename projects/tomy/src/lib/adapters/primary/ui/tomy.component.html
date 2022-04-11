@@ -7,7 +7,7 @@
     <div class="row" >
       <div class="col" >
         
-        <img  [routerLink]="'/tomy/'+item.id" [src]="item.imageUrl" width="300" height="400">
+        <img  [routerLink]="'/tomy/'+item.id" (click)=" onTomyClicked(tomy)" [src]="item.imageUrl" width="300" height="400">
         {{item.bio}} 
   
       </div>
