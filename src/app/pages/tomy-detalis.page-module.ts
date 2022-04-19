@@ -4,6 +4,8 @@ import { RouterModule } from '@angular/router';
 import { TomyDetalisPage } from './tomy-detalis.page';
 import { TomydetalisComponentModule } from '../../../projects/tomy/src/lib/adapters/primary/ui/tomydetalis.component-module';
 import { FirebaseTomyServiceModule } from '../../../projects/tomy/src/lib/adapters/secondary/infrastructure/firebase-tomy.service-module';
+import { TomyIdResolverModule } from '@tomy';
+import { TomyIdResolver } from 'projects/tomy/src/lib/adapters/primary/ui/tomy-id.resolver';
 
 
 @NgModule({ imports: [CommonModule, 
@@ -11,10 +13,14 @@ import { FirebaseTomyServiceModule } from '../../../projects/tomy/src/lib/adapte
         {
           path: ':tomyId',
           component: TomyDetalisPage,
+          resolve: {
+            tomyId: TomyIdResolver
+          }
         }
       ]),
   TomydetalisComponentModule,
-  FirebaseTomyServiceModule
+  FirebaseTomyServiceModule,
+  TomyIdResolverModule
 ],
   	declarations: [TomyDetalisPage],
   	providers: [],
